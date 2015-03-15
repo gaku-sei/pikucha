@@ -1,0 +1,15 @@
+<section class="row">
+  <div class="col-sm-12">
+    <a href="#/admin/pictures">Admin</a>
+  </div>
+</section>
+<section class="row">
+  <div class="col-sm-2" ng-repeat="picture in pictures">
+    <a ng-href="#/pictures/{{picture.id}}" class="thumbnail">
+      <img ng-src="{{picture.base64}}" alt="{{picture.title}}">
+      <div class="caption">
+        <h3>{{picture.title}}</h3>
+      </div>
+    </a>
+  </div>
+</section>

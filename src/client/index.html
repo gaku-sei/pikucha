@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Pikucha</title>
+    <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.css">
+  </head>
+  <body ng-app="pikucha">
+    <section ng-view></section>
+
+    <!-- vendors:start -->
+    <script src="/vendors/lodash/lodash.js"></script>
+    <script src="/vendors/jquery/dist/jquery.js"></script>
+    <script src="/vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/vendors/angular/angular.js"></script>
+    <script src="/vendors/angular-route/angular-route.js"></script>
+    <script src="/vendors/angular-resource/angular-resource.js"></script>
+    <script src="/vendors/babel/browser-polyfill.js"></script>
+    <!-- vendors:end -->
+
+    <!-- common:start -->
+    <script src="/common/services/delay.js"></script>
+    <!-- common:end -->
+
+    <!-- app:start -->
+    <script src="/index.js"></script>
+    <script src="/providers/model.js"></script>
+    <script src="/providers/picture.js"></script>
+    <script src="/providers/file.js"></script>
+    <script src="/directives/file-input.js"></script>
+    <script src="/controllers/home.js"></script>
+    <script src="/controllers/pictures.js"></script>
+    <script src="/controllers/admin/pictures.js"></script>
+    <!-- app:end -->
+  </body>
+</html>
